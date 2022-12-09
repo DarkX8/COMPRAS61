@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<p>listar-productos works!</p>
+<table>
+    <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+    </tr>
+    <tr *ngFor="let p of products | async">
+        <td>{{p.code}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td><button (click)="editProduct(p)">Editar</button></td>
+        <td><button (click)="deleteProduct(p)">Eliminar</button>
+            <button mat-button color="primary">Primary</button></td>
+
+    </tr>
+</table>
+<button (click)="goNewProduct()">Nuevo producto</button>

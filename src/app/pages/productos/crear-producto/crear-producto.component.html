@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<p>Formulario para crear productos</p>
+<form>
+
+    <label for ="txtCode">Codigo</label>
+    <input id="txtCode" name ="txtCode" [(ngModel)]="product.code"/><br/>
+    <label for ="txtName">Nombre</label>
+    <input id="txtName" name ="txtName"[(ngModel)]="product.name"/><br/>
+    <label for ="txtPrice">Precio</label>
+    <input id="txtPrice" name ="txtPrice"[(ngModel)]="product.price"/><br/>
+
+    <button (click)="guardar()">Guardar</button>
+</form>
+<button (click)="goListProducts()">Listado de productos</button>

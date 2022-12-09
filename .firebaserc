@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "compras61t": {
+      "hosting": {
+        "compras61": [
+          "compras61t"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "compras61t"
+  }
+}
